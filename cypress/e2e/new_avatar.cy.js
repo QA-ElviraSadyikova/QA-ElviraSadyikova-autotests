@@ -1,7 +1,7 @@
 describe('Покупка аватара', function () {                                // название набора тестов
     it('e2e тест на покупку нового аватара для тренера', function () {   // название теста
          cy.visit('https://pokemonbattle.ru/');                          // переходим на сайт https://pokemonbattle.ru/
-         cy.get('input[type="email"]').type('USER_LOGIN);                   // вводим логин
+         cy.get('input[type="email"]').type('USER_LOGIN');                   // вводим логин
          cy.get('input[type="password"]').type('USER_PASSWORD');               // вводим пароль
          cy.get('button[type="submit"]').click();                        // нажимаем кнопку Подтвердить
          cy.wait(2000);
